@@ -10,6 +10,7 @@ def quickSort(array, left, right):
         while(left<right and array[right]>=key):
             right -= 1
         array[left] = array[right]
+
         while(left<right and array[left]<=key):
             left += 1
         array[right] = array[left]
