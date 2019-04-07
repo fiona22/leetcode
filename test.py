@@ -1,10 +1,19 @@
 # coding=utf-8
-b = [0]*4
-a = []
-for i in range(3):
-    a.append(b)
-print a
 
-# 列表生成法
-test = [[0 for i in range(4)] for j in range(3)]
-print test
+def extend_list(val, list=[]):
+    list.append(val)
+    return list
+
+
+list1 = extend_list(10)
+list2 = extend_list(123, [])
+list3 = extend_list('a')
+
+print list1  # list1 = [10, 'a']
+print list2  # list2 = [123]
+print list3  # list3 = [10, 'a']
+
+X = "1,2,3"
+Y = X.split(',')
+print Y
+
